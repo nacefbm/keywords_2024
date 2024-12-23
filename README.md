@@ -47,7 +47,7 @@ A comprehensive analysis and implementation of automatic keyword extraction meth
 
 ### 5. Keyword Extraction Implementation
 - **Algorithms Implemented**
-  - Traditional approaches (specify algorithms)
+  - Traditional approaches (TextRank, KeyBERT, YAKE!...)
   - LLM integration (Llama3, GPT-4, Claude)
   - Custom implementations
 
