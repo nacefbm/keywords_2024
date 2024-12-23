@@ -75,31 +75,26 @@ A comprehensive analysis and implementation of automatic keyword extraction meth
 
 ## 📁 Project Structure
 ```
-├── data/
-│   ├── raw/                # HAL API data
-│   ├── processed/          # Cleaned datasets
-│   └── parquet/            # Optimized storage
-├── src/
-│   ├── data_collection/
-│   │   └── hal_api.py
-│   ├── preprocessing/
-│   │   ├── cleaner.py
-│   │   └── language_detector.py
-│   ├── analysis/
-│   │   ├── domain_analysis.py
-│   │   └── keyword_analysis.py
-│   ├── models/
-│   │   ├── llm_extractors/
-│   │   └── traditional_extractors/
-│   └── evaluation/
-│       ├── metrics.py
-│       └── cost_analysis.py
 ├── notebooks/
-│   ├── 1_Data_Preparation.ipynb
-│   ├── 2_EDA.ipynb
-│   ├── 3_Model_Implementation.ipynb
-│   └── 4_Results_Analysis.ipynb
-└── reports/
+│   └── Keyword_Extraction_HAL.ipynb     # Main implementation notebook
+├── data/
+│   ├── processed/
+│   │   ├── df.parquet                   # Complete dataset
+│   │   ├── df_en.parquet               # English subset
+│   │   └── df_fr.parquet               # French subset
+│   └── results/
+│       ├── df_kwbrt.parquet            # BERT results
+│       ├── df_kwbrt_title.parquet      # BERT title analysis
+│       ├── df_llm.parquet              # LLM results
+│       ├── df_llm_title.parquet        # LLM title analysis
+│       ├── df_stat.parquet             # Statistical analysis
+│       └── df_stat_titre.parquet       # Title statistics
+├── docs/
+│   ├── Keywords_Presentation.pdf       # Project presentation
+│   └── KeywordsPublication.pdf         # Technical documentation
+├── visuals/
+│   └── sankeymatic_20240218_174859_1900x1200.png  # Flow visualization
+└── README.md
 ```
 
 ## 📊 Key Findings
